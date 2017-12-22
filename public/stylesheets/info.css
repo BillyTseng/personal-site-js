@@ -1,0 +1,7 @@
+.table-orange, .table-orange>td, .table-orange>th, .alert-orange {
+	background-color: orange;
+}
+
+.table-orchid, .table-orchid>td, .table-orchid>th, .alert-orchid {
+	background-color: orchid;
+}

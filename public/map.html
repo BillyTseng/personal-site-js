@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>SunSmart - Map</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="stylesheets/map.css" rel="stylesheet">
+    <link href="stylesheets/weather.css" rel="stylesheet">
+    <script src="javascripts/map.js" defer></script>
+    <script src="javascripts/weather.js" defer></script>
+    <script src="javascripts/utility.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="home.html">SunSmart</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="home.html">Home</a>
+          <a class="nav-item nav-link" href="map.html">Map</a>
+          <a class="nav-item nav-link" href="info.html">Info</a>
+          <a class="nav-item nav-link" href="developer.html">Developer</a>
+          <a class="nav-item nav-link" href="#" id="signout">Sign Out</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="weathers" class="row">
+        <div id="day0" class="col-6 col-sm-3 text-center">
+          <img src=""><br>
+          <span></span><br>
+          <span></span>
+        </div>
+        <div id="day1" class="col-6 col-sm-3 text-center">
+          <img src=""><br>
+          <span></span><br>
+          <span></span>
+        </div>
+        <div id="day2" class="col-6 col-sm-3 text-center">
+          <img src=""><br>
+          <span></span><br>
+          <span></span>
+        </div>
+        <div id="day3" class="col-6 col-sm-3 text-center">
+          <img src=""><br>
+          <span></span><br>
+          <span></span>
+        </div>
+      </div>
+      <div class="row">
+        <div id="map" class="col"></div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

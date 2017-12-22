@@ -1,0 +1,7 @@
+#addDeviceForm, #confirmEditUserInfo, #error, #addDevice, #verifyEmailNotice, .edit-device-id {
+   display: none;
+}
+
+a, button {
+  cursor: pointer;
+}
