@@ -1,17 +1,17 @@
-# SunSmart
-The SunSmart application is an IoT enabled web application for monitoring the amount of sun exposure a user receives.
+# Personal Site in JavaScript
+The personal site, powered by node.js, express, and JavaScript, demonstrates my projects.
 
 ## Prerequisites
 ### Get third party API key.
 * Weatherbit.io
- 1. Head to [weatherbit.io](https://www.weatherbit.io/api) get API key
- 2. Replace your Weatherbit APIKEY in `/3rd-party-apikeys/weatherbit`.
+> 1. Head to [weatherbit.io](https://www.weatherbit.io/api) get API key
+> 2. Replace your Weatherbit APIKEY in `/3rd-party-apikeys/weatherbit`.
 * Gmail API
- 1. Follow [here](https://stackoverflow.com/a/24123550) to get Gmail API Credential.
- 2. Replace your Gmail credentials in `/3rd-party-apikeys/gmail`.
+> 1. Follow [here](https://stackoverflow.com/a/24123550) to get Gmail API Credential.
+> 2. Replace your Gmail credentials in `/3rd-party-apikeys/gmail`.
 * Google Maps API
- 1. Follow [here](https://developers.google.com/maps/documentation/javascript/get-api-key) to get Google Maps APIKEY.
- 2. Replace your Google Maps APIKEY in `/3rd-party-apikeys/googlemaps`.
+> 1. Follow [here](https://developers.google.com/maps/documentation/javascript/get-api-key) to get Google Maps APIKEY.
+> 2. Replace your Google Maps APIKEY in `/3rd-party-apikeys/googlemaps`.
 
 ### Install mongodb
 1. `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5`
@@ -25,5 +25,5 @@ The SunSmart application is an IoT enabled web application for monitoring the am
 2. `git clone` this project to AWS.
 3. `cd SunSmart/iot-server/`
 4. `npm install`
-5. `npm install express request mongoose ejs jwt-simple bcrypt-nodejs nodemailer`
+5. `npm install express request mongoose jwt-simple bcrypt-nodejs nodemailer`
 6. `npm start`

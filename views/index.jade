@@ -1,9 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  a(class="collection-item" href="/uvindex?zip=85719") Show current UV in 85719 (via weatherbit in JSON)<br>
-  a(class="collection-item" href="listallrecord.html") View all record in Table <br>
-  a(class="collection-item" href="inputrecord.html") Input UV Record manually (For Debug) <br>
-  a(class="collection-item" href="/record/all") View all record in JSON (For Debug) <br>
+  div(class="row")
+    div(class="col s12 m6")
+      div(class="card orange darken-3")
+        div(class="card-content white-text text-darken-2")
+           span(class="card-title")!=title
+           div(class="collection")
+             a(class="collection-item" href="/home.html") SunSmart
+             a(class="collection-item" href="/pizzamap.html") Tucson Pizza Map

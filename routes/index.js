@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Sun Smart' });
+  res.render('index', { title: 'YaoHuei Tseng\'s projects.' });
 });
 
 module.exports = router;

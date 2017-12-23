@@ -24,11 +24,7 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-//app.set('view engine', 'jade');
-// Use html instead of jade for view engine
-app.engine('html',require('ejs').renderFile);
-app.set('view engine','html');
-//app.set('view engine', 'ejs');
+app.set('view engine', 'jade');
 
 
 // uncomment after placing your favicon in /public
