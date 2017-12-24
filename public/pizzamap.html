@@ -1,1 +1,41 @@
-<h1>Hello Pizza Map</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tucson Pizza Map</title>
+  <!-- Include Sidr bundled CSS theme -->
+  <link href="dist/stylesheets/jquery.sidr.dark.css" rel="stylesheet">
+  <link href="stylesheets/pizzaMapStyle.css" rel="stylesheet">
+</head>
+<body>
+  <aside id="sidr">
+    <ul>
+      <li id="side-header">Tucson Pizza Map</li>
+      <li><a id="close-menu-button">Close Menu</a></li>
+    </ul>
+    <div id="form-like">
+      <input type="text" placeholder="Search..." data-bind="textInput: searchText, event: { input: search }">
+    </div>
+    <ul data-bind="foreach: markerList">
+      <li id="sidr-ul-li" data-bind="text: title, click: $parent.markerSwitcher"></li>
+    </ul>
+  </aside>
+  <header class="index--dark-header">
+    <a id="simple-menu" class="menu-button" href="#sidr">Toggle menu</a>
+  </header>
+  <main id="map" class="wrapper"></main>
+
+  <!-- jQuery 1.x or other version from the CDN -->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <!-- Include the Sidr JS -->
+  <script src="dist/jquery.sidr.js"></script>
+  <script src="javascripts/sidr-actions.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+  <script src="javascripts/pizzaMapScript.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YPURGMAPKEY&v=3&callback=initMap"
+    async defer onerror="mapError()">
+  </script>
+</body>
+
+</html>

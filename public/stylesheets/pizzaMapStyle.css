@@ -1,0 +1,44 @@
+html,
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: calc(100% - 32px);
+}
+
+.index--dark-header {
+  background: #1c262f;
+  border-bottom: 1px solid #1c262f;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.menu-button {
+  display: block;
+  background: url(../images/menu.gif) no-repeat;
+  overflow: hidden;
+  width: 34px;
+  height: 31px;
+  text-indent: -9999px;
+}
+
+#close-menu-button, #sidr-ul-li {
+  cursor: pointer;
+}
+
+#sidr-ul-li {
+  padding: 0 15px;
+}
+
+#side-header {
+  padding: 0 20px;
+  font-size: 16pt
+}
+
+#form-like {
+  margin: 0 15px;
+}
