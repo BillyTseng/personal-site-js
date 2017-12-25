@@ -17,6 +17,7 @@ var users = require('./routes/users');
 var weathers = require('./routes/weathers');
 var record = require('./routes/record');
 var device = require('./routes/device');
+var pizzamap = require('./routes/pizzamap');
 
 var app = express();
 
@@ -40,6 +41,7 @@ app.use('/users', users);
 app.use('/weathers', weathers);
 app.use('/record', record);
 app.use('/device', device);
+app.use('/pizzamap', pizzamap);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
