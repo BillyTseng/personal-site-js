@@ -56,22 +56,14 @@ function makeMarkerIcon(markerColor) {
 
 // This function send a foursquare request and draw makers on the map.
 function foursquareRequest(centerOfMap) {
-  var yourClientId = 'yourClientId';
-  var yourClientSecret = 'yourClientSecret';
-
-  var url = 'https://api.foursquare.com/v2/venues/search?' +
-            'query=pizza&' +
-            'll=' + centerOfMap.lat + ',' + centerOfMap.lng +
-            '&limit=10&radius=100000' +
-            '&client_id=' + yourClientId +
-            '&client_secret=' + yourClientSecret +
-            '&v=20170101';
+  url = 'https://billytseng.duckdns.org/pizzamap?lat=' + centerOfMap.lat +
+        '&lon=' + centerOfMap.lng
 
   largeInfowindow = new google.maps.InfoWindow();
 
   $.getJSON(url,
     function(result) {
-      $.each(result.response.venues, function(i, venues){
+      $.each(result.data.venues, function(i, venues){
         var marker = new google.maps.Marker({
           map: map,
           position: {lat: venues.location.lat, lng: venues.location.lng},

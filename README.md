@@ -12,6 +12,9 @@ The personal site, powered by node.js, express, and JavaScript, demonstrates my 
 * Google Maps API
 > 1. Follow [here](https://developers.google.com/maps/documentation/javascript/get-api-key) to get Google Maps APIKEY.
 > 2. Replace your Google Maps APIKEY in `/3rd-party-apikeys/googlemaps`.
+* FOURSQUARE API
+> 1. Follow [here](https://developer.foursquare.com/) to get FOURSQUARE Client ID and Client Secret.
+> 2. Replace your FOURSQUARE Client ID and Client Secret in `/3rd-party-apikeys/foursquare`.
 
 ### Install mongodb
 1. `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5`
