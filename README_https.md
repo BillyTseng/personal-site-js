@@ -34,6 +34,16 @@ sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 844
 ## Enable https
 Enable the related https and http code in `iot-server/app.js`.
 
+# How to renew certificate.
+0. Stop the web application.
+1. Disable the related https and http code in `iot-server/app.js`.
+2. Delete the redirecting rule of port 80. [Tutorial]( http://lubos.rendek.org/remove-all-iptables-prerouting-nat-rules/)
+3. Run the web application.
+4. excute `sudo certbot certonly --standalone --preferred-challenges http-01 --email <your email> -d <your domain name>`.
+5. Stop the web application.
+6. Copy certificate and change owner.
+7. Run the web application.
+
 ### Reference
 1. https://certbot.eff.org/#ubuntuxenial-other
 2. https://community.home-assistant.io/t/guide-how-to-set-up-duckdns-ssl-and-chrome-push-notifications/9722
